@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Computer Modern';
+    src: url('/fonts/Computer Modern Bold.woff2') format('woff2'), url('/fonts/Computer Modern Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U + 0020-1D703
+}
+
+@font-face {
+    font-family: 'Computer Modern';
+    src: url('/fonts/Computer Modern.woff2') format('woff2'), url('/fonts/Computer Modern.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U + 0020-1D703
+}
+
+img.resize {
+    width: 20px;
+    height: auto;
+}
+
+.shape {
+    width: 800px;
+    height: 1200px;
+    object-fit: contain;
+}
+
+body {
+    background-color: HSL(283, 100%, 58.2%);
+    font-family: "Computer Modern", monospace;
+    font-style: normal;
+}
+
+h1 h2 h3 h4 {
+    text-align: center;
+}
+
+#navbar {
+    background-color: #FFE4C4;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu {
+    float: left;
+    border-right: 1px solid #FFF;
+}
+
+
+li {
+    float: left;
+    width: 12.4%;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+.active {
+    background-color: #fbae37;
+}
+
+li:hover {
+    background-color: #fbae37;
+}
+
+.navcl > ul {
+    display:table; 
+    width:100%;
+}
+
+.questions {
+    display: none !important;
+}
+
+.item  {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+p {
+    text-align: center;
+}
+
+.zoom:hover {
+    transform: scale(3);
+}

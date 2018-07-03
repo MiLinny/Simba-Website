@@ -1,27 +1,108 @@
 <!DOCTYPE html>
-<html>
- <head>
-   <meta charset="utf-16">
-   <title>My test page</title>
-   <h1><strong>SIMBA</strong></h1>
-   <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-   <link href="styles/style.css" rel="stylesheet" type="text/css">
-   <script src="scripts/main.js"></script>
- </head>
- <body>
-    <img src="images/dream.jpg" alt="Simba :3">
-    <img serc="dell" alt="Simba:3">
-    <p> A paragraph regardin Simba :3 </p>
-    <p class="editor-note">My cat is <strong>very</strong> grumpy</p>
-    <p> Simba is renowned for his </p>
 
-    <ul>
-      <li>Popcorn paws</li>
-      <li>Bleeding eyes </li>
-      <li>Chicken mode </li>
-    <ul>
+<style>
+    body {
+        font-family: lobster;
+        text-align: center;
+        font-color: yellow;
+    }
 
-    <p>MEOW...</p>
-  </body>
+    .silver-background {
+        background-color: silver;
+    }
+
+    .org {
+        background-color: orange;
+    }
+
+    #chatting {
+        background-color:magenta;
+    }
+
+    #introduction {
+        background-color:blue;
+    }
+
+    [ type='checkbox' ] {
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+</style>
+
+
+<html lang="en">
+    <header>
+        <title>Simba's Website</title>
+        <link rel= "stylesheet" type="text/css"  href="style.css" >
+    </header>
+
+    <body>
+        <h1 id="chatting">SIMBA: CAT CAT CAT</h1>
+        <section id="introduction">
+            <p>A website dedicated to Simba :3</p>
+            <figure>
+                <a href="main.html">
+                    <img src="img/Index/cover.jpg" alt="Present Day Simba"
+                            title="Simba" style="width:200px;height:300px;"/>
+                </a>
+                <figcaption><strong>Click Simba for more</strong></figcaption>
+
+            </figure>
+        </section>
+
+        <section id="Chatting">
+            <form action="forms" method="post">
+                <div>
+                <label for="Message">Message:</label>
+                <input type="text" placeholder="Simba Chat"
+                id="message" name="user_message" required>
+                <button type="submit">Chat</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="Favourites" class="org">
+            <h1>Favourite Simbaness</h1>
+            <form action="forms" method="post">
+                <div>
+                    <label for="eyes"><input type="checkbox" name="attributes"
+                    checked>eyes</label>
+                </div>
+                <div>
+                    <label for="fur"><input type="checkbox"
+                    name="attributes">fur</label>
+                </div>
+                <div>
+                    <label for="name"><input type="checkbox"
+                    name="attributes">name</label>
+                </div>
+            </form>
+        </section>
+        <section id="Links">
+            Click for 
+            <a href="https://en.wikipedia.org/wiki/Cat">Simbas</a>
+        </section>
+
+        <section id="Fans" class="silver-background">
+            <h3>Fan Comments</h3>
+            <div>
+                		  <p class='byline'>By Bob on <time
+                          datetime="2017-09-15">September 15, 2017</time></p>
+                          <p>SIMBBBBBBBAAAHHHHHHHH!!!! </p>
+                          <p class='byline'>By Sally on <time
+                          datetime="2018-01-21">January 21, 2018</time></p>
+                          <p>CUUUUUTTTEEEEEE</p>
+            </div>
+        <footer>
+            <p><em>Copyright &copy; 2018 Simba</em></p>
+        </footer>
+    </body>
+        
 </html>
-<p>More on <a href="https://en.wikipedia.org/wiki/Cat">Simba's Life </a></p>
+<!-- Comments
+    <a href="#ID123">Web_Link</a>
+    ...
+    <h2 id="ID123">Title</h2>
+    Clicking on "Web_Link" takes user to Title
+-->
+
